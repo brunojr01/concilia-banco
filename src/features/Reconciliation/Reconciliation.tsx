@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import { Typography, Box, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const Input = styled('input')({
@@ -24,7 +21,7 @@ const Reconciliation: React.FC = () => {
   };
 
   return (
-    <Container>
+    <>
       <Typography variant="h4" component="h1" gutterBottom>
         Reconciliation Page
       </Typography>
@@ -57,7 +54,7 @@ const Reconciliation: React.FC = () => {
           Submit
         </Button>
       </Box>
-    </Container>
+    </>
   );
 };
 

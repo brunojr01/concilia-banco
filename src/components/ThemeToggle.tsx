@@ -1,19 +1,16 @@
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import Switch from '@mui/material/Switch';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const ThemeToggle: React.FC = () => {
   const { darkMode, toggleDarkMode } = useTheme();
 
   return (
-    <Box display="flex" alignItems="center">
-      <Typography variant="body1" color="textSecondary">
-        {darkMode ? 'Dark Mode' : 'Light Mode'}
-      </Typography>
-      <Switch checked={darkMode} onChange={toggleDarkMode} />
-    </Box>
+    <IconButton onClick={toggleDarkMode} color="inherit">
+      {darkMode ? <DarkModeIcon /> : <LightModeIcon />}
+    </IconButton>
   );
 };
 
