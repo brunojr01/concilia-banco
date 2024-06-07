@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: #FEFEFE; /* Cor de fundo */
+    color: #210C3A; /* Cor do texto principal */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  button {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #FEFEFE; /* Cor do texto dos botões */
+    background-color: #5E1B92; /* Cor do fundo dos botões */
+  }
+  
+  button:hover {
+    background-color: #895BAC; /* Cor do fundo dos botões ao passar o mouse */
+  }
+  

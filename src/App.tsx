@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './features/Home/Home';
+import Reconciliation from './features/Reconciliation/Reconciliation';
+import Navbar from './components/Navbar/Navbar';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reconciliation" element={<Reconciliation />} />
+      </Routes>
     </Router>
   );
 };
