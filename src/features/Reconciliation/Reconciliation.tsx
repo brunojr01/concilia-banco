@@ -21,7 +21,7 @@ const Reconciliation: React.FC = () => {
   };
 
   return (
-    <>
+    <Box sx={{ mt: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom>
         Reconciliation Page
       </Typography>
@@ -54,7 +54,7 @@ const Reconciliation: React.FC = () => {
           Submit
         </Button>
       </Box>
-    </>
+    </Box>
   );
 };
 

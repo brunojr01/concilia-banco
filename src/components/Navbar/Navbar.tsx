@@ -14,11 +14,11 @@ const Navbar: React.FC = () => {
     <AppBar position="static" sx={{ mb: 4 }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Conciliação Bancária
+          Juvenal - Finanças
         </Typography>
         <Link component={RouterLink} to="/" color="inherit" underline="none">
           <Button color="inherit" startIcon={<HomeIcon />}>
-            Home
+            Inicio
           </Button>
         </Link>
         <Link
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
           underline="none"
         >
           <Button color="inherit" startIcon={<AccountBalanceIcon />}>
-            Reconciliation
+            Conciliação
           </Button>
         </Link>
         <ThemeToggle />
