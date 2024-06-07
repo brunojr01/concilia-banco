@@ -4,6 +4,7 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import DescriptionIcon from '@mui/icons-material/Description';
 import { useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 
 const DocumentationCard: React.FC = () => {
   const theme = useTheme();
@@ -13,23 +14,24 @@ const DocumentationCard: React.FC = () => {
     <Paper
       elevation={3}
       sx={{
-        p: 2,
+        p: 3,
         textAlign: 'center',
         backgroundColor: isDarkMode ? theme.palette.grey[900] : theme.palette.background.paper,
         color: isDarkMode ? theme.palette.text.primary : theme.palette.text.secondary,
       }}
     >
-      <DescriptionIcon color="action" sx={{ fontSize: 40 }} />
-      <Typography variant="h6" component="h2" sx={{ mt: 2 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 2 }}>
+        <DescriptionIcon color="action" sx={{ fontSize: 50 }} />
+      </Box>
+      <Typography variant="h6" component="h2" sx={{ mb: 2 }}>
         Documentação
       </Typography>
-      <Typography variant="body2" sx={{ mt: 1 }}>
+      <Typography variant="body2" sx={{ mb: 3 }}>
         Consulte a documentação completa do sistema.
       </Typography>
       <Button 
         variant="outlined" 
         sx={{ 
-          mt: 2, 
           color: isDarkMode ? theme.palette.primary.light : theme.palette.primary.main, 
           borderColor: isDarkMode ? theme.palette.primary.light : theme.palette.primary.main 
         }}

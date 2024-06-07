@@ -4,6 +4,7 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import ReportIcon from '@mui/icons-material/Report';
 import { useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 
 const ViewReportsCard: React.FC = () => {
   const theme = useTheme();
@@ -13,20 +14,22 @@ const ViewReportsCard: React.FC = () => {
     <Paper
       elevation={3}
       sx={{
-        p: 2,
+        p: 3,
         textAlign: 'center',
         backgroundColor: isDarkMode ? theme.palette.grey[900] : theme.palette.background.paper,
         color: isDarkMode ? theme.palette.text.primary : theme.palette.text.secondary,
       }}
     >
-      <ReportIcon color="secondary" sx={{ fontSize: 40 }} />
-      <Typography variant="h6" component="h2" sx={{ mt: 2 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: 2 }}>
+        <ReportIcon color="secondary" sx={{ fontSize: 50 }} />
+      </Box>
+      <Typography variant="h6" component="h2" sx={{ mb: 2 }}>
         Ver Relatórios
       </Typography>
-      <Typography variant="body2" sx={{ mt: 1 }}>
+      <Typography variant="body2" sx={{ mb: 3 }}>
         Acesse os relatórios de conciliação.
       </Typography>
-      <Button variant="contained" color="secondary" sx={{ mt: 2 }}>
+      <Button variant="contained" color="secondary">
         Ver Relatórios
       </Button>
     </Paper>
